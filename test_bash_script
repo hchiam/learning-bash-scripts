@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo 'It works!'
+
+read -p 'Hit any key to close'

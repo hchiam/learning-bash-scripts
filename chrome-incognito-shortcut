@@ -1,0 +1,3 @@
+#!/bin/bash
+
+open -na "Google Chrome" --args -incognito google.com
