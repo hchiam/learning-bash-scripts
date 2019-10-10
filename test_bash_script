@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# the .sh extension is intentionally left out so that it runs upon double-click
+
 echo 'It works!'
 
 read -p 'Hit any key to close'

@@ -1,3 +1,5 @@
 #!/bin/bash
 
+# the .sh extension is intentionally left out so that it runs upon double-click
+
 open -na "Google Chrome" --args -incognito google.com
