@@ -1,2 +1,3 @@
-# learning-bash-scripts
-Learning Bash Scripts
+# Learning Bash Scripts
+
+Just one of the things I'm learning. https://github.com/hchiam/learning
