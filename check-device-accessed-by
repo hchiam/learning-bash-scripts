@@ -1,0 +1,5 @@
+#!/bin/bash
+
+lsof -nP -i4TCP
+echo ''
+read -p 'Hit any key to close'
