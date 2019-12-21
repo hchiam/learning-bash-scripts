@@ -6,7 +6,7 @@ function installEslintIfMissing() {
     npm install # this will install all the dependencies in package.json
     # could specifically install these dependencies:
     # npm install --save-dev eslint eslint-config-google eslint-plugin-html
-    # (you still need to a .eslintrc.js set up)
+    # (you still need to have set up a .eslintrc.js file)
   fi
 }
 
