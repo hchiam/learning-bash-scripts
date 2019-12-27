@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# the .sh extension is intentionally left out so that it runs upon double-click
+
+history -c; rm ~/.bash_history
