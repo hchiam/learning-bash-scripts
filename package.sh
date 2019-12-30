@@ -11,7 +11,7 @@ MINIFIED_FILE=_2DNote.min.js # edit this!
 # example: https://github.com/hchiam/_2DNote/blob/master/package.sh
 
 # install minify if it's not available:
-if ! [ -x "$(command -v minify)" ]; then npm i minify -g; fi
+if ! [ -x "$(command -v minify)" ]; then npm i minify; fi
 # minify the code:
 minify $SOURCE_FILE > $MINIFIED_FILE
 
