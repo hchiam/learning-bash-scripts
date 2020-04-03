@@ -12,6 +12,8 @@ chmod 744 chrome-incognito-shortcut.app
 
 Example of script used by Travis CI `npm run build` to copy files to `/public` folder: [copy-to-public-folder.sh](https://github.com/hchiam/hchiam.github.io/blob/master/copy-to-public-folder.sh)
 
-## Related Repo
+## Related Repos
 
 <https://github.com/hchiam/learning-powershell>
+
+<https://github.com/hchiam/learning-dependency-cruiser>
