@@ -17,3 +17,11 @@ Example of script used by Travis CI `npm run build` to copy files to `/public` f
 <https://github.com/hchiam/learning-powershell>
 
 <https://github.com/hchiam/learning-dependency-cruiser>
+
+## Useful `git` commands
+
+<https://www.smashingmagazine.com/make-life-easier-when-using-git/>
+
+- `git status -sb`
+- git hooks
+- Try using git `bisect` with "binary search" automation to find the breaking change
