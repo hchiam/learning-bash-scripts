@@ -20,7 +20,12 @@ Example of script used by Travis CI `npm run build` to copy files to `/public` f
 
 ## Useful `git` commands
 
-<https://www.smashingmagazine.com/make-life-easier-when-using-git/>
+From <https://stackoverflow.com/questions/4348590/how-can-i-make-git-ignore-future-revisions-to-a-file/39776107#39776107> :
+
+- `git update-index --skip-worktree your-file-to-ignore-future-revisions-for.txt`
+- `git update-index --no-skip-worktree your-file-to-start-watching-revisions-for.txt`
+
+From <https://www.smashingmagazine.com/make-life-easier-when-using-git/> :
 
 - `git status -sb`
 - git hooks
