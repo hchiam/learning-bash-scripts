@@ -1,4 +1,4 @@
-scriptName='script.js'
+scriptName='minified-script.js'
 scriptText=`cat ${scriptName}`
 functionNames=()
 
