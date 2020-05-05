@@ -34,6 +34,6 @@ for i in "${!functionNames[@]}"
 do
   functionName=${functionNames[$i]}
   randomName="v$((RANDOM % 10))_$i"
-  echo "index: $i    random name: $randomName    <-    function name: ${functionNames[$i]}"
+  # echo "index: $i    random name: $randomName    <-    function name: ${functionNames[$i]}"
   replace_all_matches $functionName $randomName
 done
