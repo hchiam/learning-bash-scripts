@@ -45,3 +45,17 @@ git bisect reset # or: git bisect reset HEAD (or: git bisect reset <commit-id>)
 ```bash
 git rebase -i --exec "yarn test" d294ae9 # test all commits from d294ae9 to HEAD, until hit first failing commit
 ```
+
+### How to revert changes of a git push:
+
+This shows the commit hash: (looks like `l0ngStr1ng0fL3t7er5AndNum83rz`)
+
+```bash
+git log
+```
+
+then use the hash of the commit you want to revert: (and when you're in the in-CLI editor, type `:qa` and then hit Enter)
+
+```bash
+git revert l0ngStr1ng0fL3t7er5AndNum83rz
+```
