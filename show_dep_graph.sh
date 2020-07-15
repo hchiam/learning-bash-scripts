@@ -14,7 +14,7 @@ function installDotIfMissing() {
 }
 
 function getSrcFolder() {
-  read -p "Enter src folder: " srcFolder
+  read -p "Enter src folder (or folder or file you'd like to inspect): " srcFolder
 }
 
 function createDependencyGraph() {
