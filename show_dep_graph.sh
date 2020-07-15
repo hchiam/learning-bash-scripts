@@ -36,11 +36,11 @@ function showDependencyGraph() {
 
 askForMaxDepth
 installDotIfMissing
-if [ ! -d src ]; then
-  echo "src folder missing"
+# if [ ! -d src ]; then
+#   echo "src folder missing"
   getSrcFolder
-else
-  srcFolder="src"
-fi
+# else
+#   srcFolder="src"
+# fi
 createDependencyGraph
 showDependencyGraph
