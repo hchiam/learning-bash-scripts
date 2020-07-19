@@ -44,3 +44,7 @@ installDotIfMissing
 # fi
 createDependencyGraph
 showDependencyGraph
+
+# Example outputs:
+# https://raw.githubusercontent.com/hchiam/learning-dependency-cruiser/879baa9074b550d87bd3f23203022ca35a31850d/dependencygraph.svg
+# https://raw.githubusercontent.com/hchiam/code-inspiration/d2301787478c917812d0a82a7d1803d515f6a35c/dependencygraph.svg
