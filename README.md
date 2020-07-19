@@ -8,10 +8,6 @@ To enable running a script upon click, you need to edit permissions. For example
 chmod 744 chrome-incognito-shortcut.app
 ```
 
-## Random Note
-
-Example of script used by Travis CI `npm run build` to copy files to `/public` folder: [copy-to-public-folder.sh](https://github.com/hchiam/hchiam.github.io/blob/master/copy-to-public-folder.sh)
-
 ## Related Repos
 
 <https://github.com/hchiam/learning-powershell>
@@ -59,3 +55,13 @@ then use the hash of the commit you want to revert: (and when you're in the in-C
 ```bash
 git revert l0ngStr1ng0fL3t7er5AndNum83rz
 ```
+
+## Random Notes
+
+Example of script used by Travis CI `npm run build` to copy files to `/public` folder: [copy-to-public-folder.sh](https://github.com/hchiam/hchiam.github.io/blob/master/copy-to-public-folder.sh)
+
+### Get list of globally installed packages
+
+`npm list -g --depth 0`
+
+`yarn global list`
