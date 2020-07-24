@@ -42,6 +42,26 @@ git bisect reset # or: git bisect reset HEAD (or: git bisect reset <commit-id>)
 git rebase -i --exec "yarn test" d294ae9 # test all commits from d294ae9 to HEAD, until hit first failing commit
 ```
 
+From <https://dev.to/g_abud/advanced-git-reference-1o9j#git-commands> :
+
+- `git rm --cached <file-name>` to stop tracking `<file-name>` in version control
+- `git diff --staged`
+- `git diff branch1..branch2`
+- `git commit --amend` to add more changes to the last commit
+- `git cherry-pick <commit-sha>` to bring in a commit from a different branch
+- `git checkout <branch-name> <file-name>` to bring in a file from a differnt branch
+
+- `git reset <commit-sha>`
+- `git reset --hard HEAD~1` = undo last commit and rewrite history (then `git push -f` to push rewritten history)
+- `git reset --hard HEAD~n # where n is the last n commits` = undo last n commit and rewrite history (then `git push -f` to push rewritten history)
+- `git reset --hard <commit-sha>` = undo comments and rewrite history (then `git push -f` to push rewritten history)
+- `--soft` = uncommit but still staged; `--mixed` = uncommit+unstage, but changes kept locally; `--hard` = uncommit+unstage+delete changes
+
+- `git stash` to save your changes to top of stash stack (add `-u` to stash untracked files as well)
+- `git stash list` to see what's in your stash
+- `git stash save "message to go along with changes"`
+- `git stash pop`
+
 ### How to revert changes of a git push:
 
 This shows the commit hash: (looks like `l0ngStr1ng0fL3t7er5AndNum83rz`)
