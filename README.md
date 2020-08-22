@@ -18,6 +18,8 @@ chmod 744 chrome-incognito-shortcut.app
 
 - `git pull origin dev` (if you want to merge commits into `dev` branch into your local branch) and then type `:qa` and hit enter. Now you can `git push`.
 
+- `git tag <name-of-tag>; git push --tags` (and then you can draft a new release on the same tag name to add details to it on GitHub)
+
 From <https://stackoverflow.com/questions/4348590/how-can-i-make-git-ignore-future-revisions-to-a-file/39776107#39776107> :
 
 - `git update-index --skip-worktree your-file-to-ignore-future-revisions-for.txt`
