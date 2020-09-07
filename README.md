@@ -14,6 +14,8 @@ chmod 744 chrome-incognito-shortcut.app
 
 <https://github.com/hchiam/learning-dependency-cruiser>
 
+<https://github.com/hchiam/learning-https-server>
+
 ## Useful `git` commands
 
 - `git pull origin dev` (if you want to merge commits into `dev` branch into your local branch) and then type `:qa` and hit enter. Now you can `git push`.
