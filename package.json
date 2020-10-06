@@ -1,0 +1,20 @@
+{
+  "name": "learning-bash-scripts",
+  "version": "1.0.0",
+  "description": "Just one of the things I'm learning. <https://github.com/hchiam/learning>",
+  "main": "",
+  "scripts": {
+    "test": "tsc $npm_config_name.ts --lib es6,dom && node $npm_config_name.js",
+    "demo": "echo \"HELLO $npm_config_file_name.ts GOODBYE (\\$npm_config_whatever will match --whatever=...)\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hchiam/learning-bash-scripts.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hchiam/learning-bash-scripts/issues"
+  },
+  "homepage": "https://github.com/hchiam/learning-bash-scripts#readme"
+}

@@ -93,3 +93,28 @@ Example of script used to generate and insert a package SemVer number for a JS f
 `npm list -g --depth 0`
 
 `yarn global list`
+
+### `npm` scripts that accept parameters
+
+Examples I set up in package.json:
+
+```json
+{
+  "test": "tsc $npm_config_name.ts --lib es6,dom && node $npm_config_name.js",
+  "demo": "echo \"HELLO $npm_config_file_name.ts GOODBYE (\\$npm_config_whatever will match --whatever=...)\""
+}
+```
+
+So you can do this:
+
+```bash
+npm run demo --file_name=someFileName
+# prints out: HELLO someFileName.ts GOODBYE [...]
+```
+
+and:
+
+```bash
+npm run test --name=sameFileName
+# will run: tsc sameFileName.ts --lib es6,dom && node sameFileName.js
+```
