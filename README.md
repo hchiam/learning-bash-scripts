@@ -94,7 +94,7 @@ Example of script used to generate and insert a package SemVer number for a JS f
 
 `yarn global list`
 
-### `npm` scripts that accept parameters
+### npm scripts that accept parameters
 
 Examples I set up in package.json:
 
