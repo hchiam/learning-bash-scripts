@@ -65,3 +65,9 @@ sed -i '' '1i\
 '//\ $LIBRARY_NAME\ ${MAJOR}.${MINOR}.${PATCH}'
 ' "${MINIFIED_FILE}"
 # NOTE: the in-place parameter '' is required for Mac
+
+# print out hash for use in integrity attribute:
+echo sha384-$(cat "${MINIFIED_FILE}" | openssl dgst -sha384 -binary | openssl base64 -A)
+echo
+echo NOTE: Make sure to update the version in package.json
+echo
