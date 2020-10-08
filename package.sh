@@ -4,6 +4,8 @@
 # for use in your website via CDN (i.e. production use),
 # run this command: bash package.sh
 
+# More info: SemVer: https://semver.org
+
 LIBRARY_NAME=_2DNote
 SOURCE_FILE=_2DNote.js # edit this!
 MINIFIED_FILE=_2DNote.min.js # edit this!
@@ -28,8 +30,8 @@ echo
 echo "Enter a number:"
 echo
 echo " 0 = Keep as version ${LATEST_RELEASE_VERSION}"
-echo " 1 = Major breaking change? ($(($MAJOR+1)).$MINOR.$PATCH)"
-echo " 2 = Minor enhancement? ($MAJOR.$(($MINOR+1)).$PATCH)"
+echo " 1 = Major breaking change? ($(($MAJOR+1)).0.0)"
+echo " 2 = Minor enhancement? ($MAJOR.$(($MINOR+1)).0)"
 echo " 3 = Backwards-compatible fix? ($MAJOR.$MINOR.$(($PATCH+1)))"
 echo
 read -p "(Choose 1/2/3): " -n 1 -r
@@ -38,9 +40,12 @@ echo
 if [[ $REPLY =~ ^1$ ]]; then
   echo "Changing MAJOR version:"
   MAJOR="$(($MAJOR+1))"
+  MINOR=0
+  PATCH=0
 elif [[ $REPLY =~ ^2$ ]]; then
   echo "Changing MINOR version:"
   MINOR="$(($MINOR+1))"
+  PATCH=0
 elif [[ $REPLY =~ ^3$ ]]; then
   echo "Changing PATCH version:"
   PATCH="$(($PATCH+1))"
