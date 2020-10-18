@@ -1,0 +1,1 @@
+echo 'text to append' >> file-name.js
