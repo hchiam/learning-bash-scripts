@@ -6,7 +6,7 @@ echo sha384-$(shasum -b -a 384 FILENAME.js | awk '{ print $1 }' | xxd -r -p | ba
 
 # Or just do this in your .bash_profile:
 
-function sha() { # usage: sha FILENAME.js
+function sha() { # usage: source get-integrity.sh; sha FILENAME.js
   tempShaOutput=$(cat $1 | openssl dgst -sha384 -binary | openssl base64 -A)
   echo sha384-$tempShaOutput
 }
