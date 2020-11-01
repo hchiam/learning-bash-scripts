@@ -118,3 +118,19 @@ and:
 npm run test --name=sameFileName
 # will run: tsc sameFileName.ts --lib es6,dom && node sameFileName.js
 ```
+
+### Actually upgrade node
+
+Installing manually doesn't work, and using `n` or clean cache didn't seem to work for me. <https://stackoverflow.com/questions/23940172/not-seeing-latest-version-when-updating-node-js-via-installer-msi-windows-7/31229369#31229369>
+
+```bash
+nvm install node --lts
+node -v
+```
+
+If you accidentally installed the latest but want to downgrade to the last stable instead:
+
+```bash
+nvm install 14.15.0 # whatever the latest unstable versioni on https://nodejs.org/en/
+nvm use 14.15.0
+```
