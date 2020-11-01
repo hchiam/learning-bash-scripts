@@ -121,7 +121,9 @@ npm run test --name=sameFileName
 
 ### Actually upgrade node
 
-Installing manually doesn't work, and using `n` or clean cache didn't seem to work for me. <https://stackoverflow.com/questions/23940172/not-seeing-latest-version-when-updating-node-js-via-installer-msi-windows-7/31229369#31229369>
+You can upgrade to the latest `npm` with `npm install -g npm@latest`
+
+But installing node manually doesn't always work, and using `n` or clean cache didn't seem to work for me. <https://stackoverflow.com/questions/23940172/not-seeing-latest-version-when-updating-node-js-via-installer-msi-windows-7/31229369#31229369>
 
 ```bash
 nvm install node --lts
