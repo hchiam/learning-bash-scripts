@@ -5,7 +5,7 @@
 # or this:
 
 read -p "Please enter y or n: " input
-echo $input
+# echo $input
 
 if [[ -z "$input" ]] || [[ $input == "y" ]]
 then
