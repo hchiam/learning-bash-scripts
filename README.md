@@ -90,9 +90,11 @@ Example of script used to generate and insert a package SemVer number for a JS f
 
 ### Get list of globally installed packages
 
-`npm list -g --depth 0` for just top-level (or a specific package: `npm list -g browser-sync` checks if `browser-sync` is installed globally)
-
 `yarn global list`
+
+`npm list -g --depth 0` for just top-level
+
+`npm list -g browser-sync` or a specific package (this example checks if `browser-sync` is installed globally)
 
 ### npm scripts that accept parameters
 
