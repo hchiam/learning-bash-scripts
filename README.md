@@ -86,6 +86,8 @@ git revert l0ngStr1ng0fL3t7er5AndNum83rz
 
 ## Random Notes
 
+Get file info like edit date: `stat filename`
+
 Example of script used by Travis CI `npm run build` to copy files to `/public` folder: [copy-to-public-folder.sh](https://github.com/hchiam/hchiam.github.io/blob/master/copy-to-public-folder.sh)
 
 Example of script used to generate and insert a package SemVer number for a JS file: [package.sh](https://github.com/hchiam/_2DNote/blob/master/package.sh)
