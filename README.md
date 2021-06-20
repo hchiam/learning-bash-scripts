@@ -18,6 +18,8 @@ chmod 744 chrome-incognito-shortcut.app
 
 ## Useful `git` commands
 
+- `git commit --amend`
+
 - `git reset HEAD~1` to "un-commit"
 
 - `git pull origin dev` (if you want to merge commits into `dev` branch into your local branch) and then type `:qa` and hit enter. Now you can `git push`.
