@@ -152,3 +152,7 @@ If you accidentally installed the latest but want to downgrade to the last stabl
 nvm install 14.15.0 # whatever the latest unstable versioni on https://nodejs.org/en/
 nvm use 14.15.0
 ```
+
+### switching from `bash` to `zsh`: (and back)
+
+<https://github.com/hchiam/learning-zsh>
