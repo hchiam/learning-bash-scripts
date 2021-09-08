@@ -71,6 +71,9 @@ From <https://dev.to/g_abud/advanced-git-reference-1o9j#git-commands> :
 - `git stash list` to see what's in your stash
 - `git stash save "message to go along with changes"`
 - `git stash pop`
+- `git stash save nameforlater`
+  - and then later `git stash list` (note the index)
+  - and then `git stash apply <index>` to use `<index>`
 
 ### How to revert changes of a git push:
 
