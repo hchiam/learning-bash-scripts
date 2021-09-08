@@ -72,8 +72,11 @@ From <https://dev.to/g_abud/advanced-git-reference-1o9j#git-commands> :
 - `git stash save "message to go along with changes"`
 - `git stash pop`
 - `git stash save nameforlater`
+
   - and then later `git stash list` (note the index)
   - and then `git stash apply <index>` to use `<index>`
+
+- `git branch -M main` to rename branch to main, and then `git push -u origin main` ([more info](https://www.git-tower.com/learn/git/faq/git-rename-master-to-main/))
 
 ### How to revert changes of a git push:
 
