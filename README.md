@@ -71,6 +71,9 @@ From <https://dev.to/g_abud/advanced-git-reference-1o9j#git-commands> :
 - `git stash list` to see what's in your stash
 - `git stash save "message to go along with changes"`
 - `git stash pop`
+
+From <https://www.youtube.com/watch?v=ecK3EnyGD8o> :
+
 - `git stash save nameforlater`
 
   - and then later `git stash list` (note the index)
