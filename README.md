@@ -78,6 +78,8 @@ From <https://dev.to/g_abud/advanced-git-reference-1o9j#git-commands> :
 
 - `git branch -M main` to rename branch to main, and then `git push -u origin main` ([more info](https://www.git-tower.com/learn/git/faq/git-rename-master-to-main/))
 
+- `git log --graph --oneline --decorate` for a pared-down git log
+
 ### How to revert changes of a git push:
 
 This shows the commit hash: (looks like `l0ngStr1ng0fL3t7er5AndNum83rz`)
