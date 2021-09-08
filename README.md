@@ -83,6 +83,8 @@ From <https://www.youtube.com/watch?v=ecK3EnyGD8o> :
 
 - `git log --graph --oneline --decorate` for a pared-down git log
 
+- lots more git tips at a [Fireship.io YouTube video](https://www.youtube.com/watch?v=ecK3EnyGD8o)
+
 ### How to revert changes of a git push:
 
 This shows the commit hash: (looks like `l0ngStr1ng0fL3t7er5AndNum83rz`)
