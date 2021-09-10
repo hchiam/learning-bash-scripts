@@ -107,6 +107,12 @@ Example of script used by Travis CI `npm run build` to copy files to `/public` f
 
 Example of script used to generate and insert a package SemVer number for a JS file: [package.sh](https://github.com/hchiam/_2DNote/blob/master/package.sh)
 
+Exit/quit:
+
+```bash
+exit
+```
+
 ### Get list of globally installed packages
 
 `yarn global list`
