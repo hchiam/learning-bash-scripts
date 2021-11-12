@@ -175,3 +175,15 @@ nvm use 14.15.0
 ### switching from `bash` to `zsh`: (and back)
 
 <https://github.com/hchiam/learning-zsh>
+
+### Format whole directory instead of waiting for each file save in VSCode
+
+```bash
+prettier --write .
+```
+
+or
+
+```bash
+npx prettier --write .
+```
