@@ -187,3 +187,11 @@ or
 ```bash
 npx prettier --write .
 ```
+
+### how to sync forked repo with the original repo
+
+<https://stackoverflow.com/questions/7244321/how-do-i-update-or-sync-a-forked-repository-on-github>
+
+```bash
+git remote add upstream https://github.com/<owner>/<repo>.git
+```
