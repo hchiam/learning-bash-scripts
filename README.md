@@ -195,3 +195,7 @@ npx prettier --write .
 ```bash
 git remote add upstream https://github.com/<owner>/<repo>.git
 ```
+
+### `gh` CLI commands
+
+<https://github.com/hchiam/learning-gh>
