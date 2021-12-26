@@ -2,6 +2,7 @@
 # https://github.com/hchiam/learning-gh
 
 function learn() {
+  # learn nameOfTheThingBeingLearned
   echo
   echo "Creating repo: learning-$1"
   echo
