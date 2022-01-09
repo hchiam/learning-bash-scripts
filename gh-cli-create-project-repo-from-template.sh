@@ -7,4 +7,5 @@ function project() {
   echo "Creating repo: $1"
   echo
   gh repo create --template project-template "$1" --public
+  gh repo clone "$1"
 }

@@ -7,4 +7,5 @@ function learn() {
   echo "Creating repo: learning-$1"
   echo
   gh repo create --template learning-template "learning-$1" --public
+  gh repo clone "learning-$1"
 }
