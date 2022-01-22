@@ -199,3 +199,9 @@ git remote add upstream https://github.com/<owner>/<repo>.git
 ### `gh` CLI commands
 
 <https://github.com/hchiam/learning-gh>
+
+### setting up GitHub PATs (Personal Access Tokens)
+
+For `gh` CLI: copy your PAT, run `gh auth login`, and paste your PAT when prompted to.
+
+For npm pkg: copy your PAT, open `~/.npmrc`, and paste your PAT to be the "TOKEN" part of a string `//npm.pkg.github.com/:_authToken=TOKEN` in that `~/.npmrc` file.
