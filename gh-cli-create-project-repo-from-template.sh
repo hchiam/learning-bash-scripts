@@ -8,4 +8,5 @@ function project() {
   echo
   gh repo create --template project-template "$1" --public
   gh repo clone "$1"
+  cd "$1"
 }

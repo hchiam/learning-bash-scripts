@@ -8,4 +8,5 @@ function learn() {
   echo
   gh repo create --template learning-template "learning-$1" --public
   gh repo clone "learning-$1"
+  cd "learning-$1"
 }
