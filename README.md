@@ -2,6 +2,8 @@
 
 Just one of the things I'm learning. <https://github.com/hchiam/learning>
 
+A nice article on key things to know: https://www.joshwcomeau.com/javascript/terminal-for-js-devs
+
 To enable running a script upon click, you need to edit permissions. For example, for `chrome-incognito-shortcut.app`:
 
 ```bash
@@ -206,3 +208,33 @@ git fetch upstream
 For `gh` CLI: copy your PAT, run `gh auth login`, and paste your PAT when prompted to.
 
 For npm pkg: copy your PAT, open `~/.npmrc`, and paste your PAT to be the "TOKEN" part of a string `//npm.pkg.github.com/:_authToken=TOKEN` in that `~/.npmrc` file.
+
+## https://www.joshwcomeau.com/javascript/terminal-for-js-devs
+
+- Bash ≈ Zsh
+- the terminal is kinda like the console log in browser dev tools, but can switch between shell languages
+- `echo` ≈ `console.log`
+- `$` notation is just for start of prompt
+- `pwd` = print the current working directory folder path
+- `ls` = list current folder files/subfolders
+  - `ls -la` = `-l`ong data too like updated dates, and `-a`ll files including hidden files/folders
+- `cd` = change directory
+- `~` = home folder, like `/Users/yourusernamehere`
+- `.` = current folder
+- `..` = parent folder
+- use the tab key to auto-complete!
+- `rm` = remove
+  - `rm -r foldername` = remove `foldername` and `-r`ecursively inside it too
+  - `rm -rf foldername` = do that, but `-f`orce remove regardless of permissions
+- `man somecommand` = show a printout of the `man`ual for somecommand
+  - hit `q` to `q`uit (arrow keys to scroll)
+- `ping 8.8.8.8` = continuously check latency against IP address 8.8.8.8 (Google's DNS server), which can be used to continuously check if the server is online (`Ctrl`+`c` or `Ctrl`+`d` to stop)
+- `-` = "previous"
+  - `cd -` = toggle to previous folder
+  - `git checkout -` = toggle to previously-checked-out branch
+- `alias hi='echo "Hello world!"'`
+  - now you can just do `hi` to get a printout of `Hello world!`
+- `command1 && command2` = do command1 and then to command2
+- stuck in Vi/Vim? `Ctrl`+`c` won't work! hit `Escape` -> `:` -> `q!` -> `Enter`
+- common web dev tasks: https://www.joshwcomeau.com/javascript/terminal-for-js-devs/#common-development-tasks
+  - reinstall dependencies: `rm -rf node_modules; npm install;`
