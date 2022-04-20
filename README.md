@@ -2,7 +2,7 @@
 
 Just one of the things I'm learning. <https://github.com/hchiam/learning>
 
-A nice article on key things to know: https://www.joshwcomeau.com/javascript/terminal-for-js-devs
+A nice article on key things to know: https://www.joshwcomeau.com/javascript/terminal-for-js-devs (my own summary notes are below)
 
 To enable running a script upon click, you need to edit permissions. For example, for `chrome-incognito-shortcut.app`:
 
