@@ -148,6 +148,16 @@ npm run test --name=sameFileName
 # will run: tsc sameFileName.ts --lib es6,dom && node sameFileName.js
 ```
 
+### Install package without dynamic version (i.e. without caret ^)
+
+```sh
+npm install <package-name> --save-exact
+```
+
+so you get `1.2.3` instead of `^1.2.3` in your `package.json`
+
+https://stackoverflow.com/questions/58638817/what-is-the-purpose-of-using-save-exact#:~:text=--save-exact%20will%20generate%20the%20next%20package.json%20code
+
 ### Actually upgrade node
 
 You can upgrade to the latest `npm` with `npm install -g npm@latest`
