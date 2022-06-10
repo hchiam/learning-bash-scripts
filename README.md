@@ -101,6 +101,16 @@ then use the hash of the commit you want to revert: (and when you're in the in-C
 git revert l0ngStr1ng0fL3t7er5AndNum83rz
 ```
 
+### How to create a branch with no history
+
+https://stackoverflow.com/a/34954852
+
+```bash
+git checkout --orphan <name_you_choose_for_orphan_branch>
+git commit
+git push <remote-name> <branch-name>
+```
+
 ## Random Notes
 
 Get file info like edit date: `stat filename`
