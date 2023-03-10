@@ -9,4 +9,5 @@ function learn-redirect() {
   gh repo create --template learning-redirect "learning-$1" --public
   gh repo clone "learning-$1"
   cd "learning-$1"
+  git pull
 }
