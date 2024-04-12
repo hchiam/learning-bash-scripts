@@ -18,6 +18,15 @@ chmod 744 chrome-incognito-shortcut.app
 
 <https://github.com/hchiam/learning-https-server>
 
+## `>` and `<` and `>>` and `<<` in bash
+
+https://superuser.com/questions/480599/with-regards-to-piping-commands-what-are-the-greater-than-and-less-than
+
+- `>` = redirect output = "(over)write to", e.g.: `echo 'hello' > file.txt`
+- `<` = redirect input = "read", e.g.: `cat < file.txt` (same as just `cat file.txt`)
+- `>>` = append to end of file, e.g.: `echo 'new last line of text' >> file.txt`
+- `cat << EOF >> file.txt` = "start multiline input session that ends when you type `EOF` and hit Enter"
+
 ## Useful `git` commands
 
 - `git commit --amend`
