@@ -238,6 +238,18 @@ For `gh` CLI: copy your PAT, run `gh auth login`, and paste your PAT when prompt
 
 For npm pkg: copy your PAT, open `~/.npmrc`, and paste your PAT to be the "TOKEN" part of a string `//npm.pkg.github.com/:_authToken=TOKEN` in that `~/.npmrc` file.
 
+### quickly set up a basic server to serve index.html (or whatever's in the current folder)
+
+```sh
+python3 -m http.server 8000
+```
+
+or set up shortcut `srv` in .bash_profile:
+
+```
+alias srv='python3 -m http.server 8000'
+```
+
 ## https://www.joshwcomeau.com/javascript/terminal-for-js-devs
 
 - Bash ≈ Zsh
