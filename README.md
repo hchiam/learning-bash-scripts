@@ -279,3 +279,16 @@ alias srv='python3 -m http.server 8000'
 - stuck in Vi/Vim? `Ctrl`+`c` won't work! hit `Escape` -> `:` -> `q!` -> `Enter`
 - common web dev tasks: https://www.joshwcomeau.com/javascript/terminal-for-js-devs/#common-development-tasks
   - reinstall dependencies: `rm -rf node_modules; npm install;`
+
+## more to learn for unix:
+
+- https://www.tutorialspoint.com/unix/unix-special-variables.htm
+- https://www.tutorialspoint.com/unix/unix-using-arrays.htm
+- https://www.tutorialspoint.com/unix/unix-basic-operators.htm
+- https://www.tutorialspoint.com/unix/unix-decision-making.htm
+- https://www.tutorialspoint.com/unix/unix-shell-loops.htm
+- https://www.tutorialspoint.com/unix/unix-quoting-mechanisms.htm for getting variables and special characters parsed or not parsed in strings
+- https://www.tutorialspoint.com/unix/unix-io-redirections.htm - there's more to it than just > file
+- https://www.tutorialspoint.com/unix/unix-shell-functions.htm
+- https://www.tutorialspoint.com/unix/unix-manpage-help.htm
+- https://www.tutorialspoint.com/unix/unix-useful-commands.htm
