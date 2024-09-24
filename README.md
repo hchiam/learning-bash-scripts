@@ -292,3 +292,34 @@ alias srv='python3 -m http.server 8000'
 - https://www.tutorialspoint.com/unix/unix-shell-functions.htm
 - https://www.tutorialspoint.com/unix/unix-manpage-help.htm
 - https://www.tutorialspoint.com/unix/unix-useful-commands.htm
+
+## 5 linux command tricks from fireship.io
+
+https://www.youtube.com/shorts/fwBIZRq-vzY
+
+- `mkdir`, but with multiple siblings of multiple folders and levels at the same time: `mkdir ./folder/{sibling1,sibling2}/{commonA,b,c}` =
+  ```txt
+  in /folder:
+    sibling1
+      commonA
+      b
+      c
+    sibling2
+      commonA
+      b
+      c
+  ```
+- `cd`, but back to where you last were instead of `cd ..` a bunch of times:
+  - `cd ./somewhere/deeply/nested`
+  - then `cd -` to get back to `./`
+- `touch`, but create a bunch of files with names with a pattern:
+  - `touch file{1..5}.txt` =
+    ```txt
+    file1.txt
+    file2.txt
+    file3.txt
+    file4.txt
+    file5.txt
+    ```
+- `tail err.log` to read a file, but `tail -f err.log` to "follow" changes
+- `history`, but `history 5` to get the last 5 commands
