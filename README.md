@@ -327,6 +327,9 @@ https://www.youtube.com/shorts/fwBIZRq-vzY
     file5.txt
     ```
   - (note: the one-liner command doesn't pad with 0s on my machine despite `{01..10}`)
+  - two 0-padding alternatives that worked for me: (`%02g` = zero-padding of width 2 of general number format)
+    - `touch $(seq -f "file%02g.txt" 1 10)`
+    - `touch $(printf "file%02g.txt " {1..10})` (the space after `txt ` matters!)
 - `tail err.log` to read a file, but `tail -f err.log` to "follow" changes
   - (note: doesn't seem to print out the right contents if i edit in another tab with `nano`)
 - `history`, but `history 5` to get the last 5 commands
