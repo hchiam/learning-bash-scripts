@@ -297,18 +297,18 @@ alias srv='python3 -m http.server 8000'
 
 https://www.youtube.com/shorts/fwBIZRq-vzY
 
-- `mkdir`, but with multiple siblings of multiple folders and levels at the same time: `mkdir ./folder/{sibling1,sibling2}/{commonA,b,c}` =
-  ```txt
-  in /folder:
-    sibling1
-      commonA
-      b
-      c
-    sibling2
-      commonA
-      b
-      c
-  ```
+- `mkdir`, but with multiple sibling folders at the same time:
+  - ```sh
+    mkdir folder
+    mkdir folder/{sibling1,sibling2}
+    ```
+  - gives you this:
+    ```txt
+    /folder
+      /sibling1
+      /sibling2
+    ```
+  - (note: multiple levels at once doesn't seem to work on my machine: `mkdir folder/{sibling1,sibling2}/{commonA,b,c}`)
 - `cd`, but back to where you last were instead of `cd ..` a bunch of times:
   - `cd ./somewhere/deeply/nested`
   - then `cd -` to get back to `./`
@@ -321,5 +321,7 @@ https://www.youtube.com/shorts/fwBIZRq-vzY
     file4.txt
     file5.txt
     ```
+  - (note: the one-liner command doesn't pad with 0s on my machine despite `{01..10}`)
 - `tail err.log` to read a file, but `tail -f err.log` to "follow" changes
+  - (note: doesn't seem to print out the right contents if i edit in another tab with `nano`)
 - `history`, but `history 5` to get the last 5 commands
