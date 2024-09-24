@@ -298,8 +298,8 @@ alias srv='python3 -m http.server 8000'
 https://www.youtube.com/shorts/fwBIZRq-vzY
 
 - `mkdir`, but with multiple sibling folders at the same time:
-  - ```sh
-    mkdir folder
+  - `mkdir folder` then:
+    ```sh
     mkdir -p folder/{sibling1,sibling2}/{commonA,b,c}
     ```
   - gives you this:
@@ -315,21 +315,39 @@ https://www.youtube.com/shorts/fwBIZRq-vzY
         /c
     ```
 - `cd`, but back to where you last were instead of `cd ..` a bunch of times:
-  - `cd ./somewhere/deeply/nested`
-  - then `cd -` to get back to `./`
+  - `cd ./somewhere/deeply/nested` then to get back to `./`:
+    ```sh
+    cd -
+    ```
 - `touch`, but create a bunch of files with names with a pattern:
-  - `touch file{1..5}.txt` =
+  - ```sh
+    touch file{1..10}.txt
+    ```
+    =
     ```txt
     file1.txt
     file2.txt
     file3.txt
     file4.txt
     file5.txt
+    file6.txt
+    file7.txt
+    file8.txt
+    file9.txt
+    file10.txt
     ```
   - (note: the one-liner command doesn't pad with 0s on my machine despite `{01..10}`)
   - two 0-padding alternatives that worked for me: (`%02g` = zero-padding of width 2 of general number format)
-    - `touch $(seq -f "file%02g.txt" 1 10)`
-    - `touch $(printf "file%02g.txt " {1..10})` (the space after `txt ` matters!)
+    - ```sh
+      touch $(seq -f "file%02g.txt" 1 10)
+      ```
+    - or this: (the space after `txt ` matters for this one!)
+      ```sh
+      touch $(printf "file%02g.txt " {1..10})`
+      ```
 - `tail err.log` to read a file, but `tail -f err.log` to "follow" changes
   - (note: doesn't seem to print out the right contents if i edit in another tab with `nano`)
-- `history`, but `history 5` to get the last 5 commands
+- `history`, but to get the last 5 commands:
+  - ```sh
+    history 5
+    ```
