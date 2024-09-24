@@ -300,15 +300,20 @@ https://www.youtube.com/shorts/fwBIZRq-vzY
 - `mkdir`, but with multiple sibling folders at the same time:
   - ```sh
     mkdir folder
-    mkdir folder/{sibling1,sibling2}
+    mkdir -p folder/{sibling1,sibling2}/{commonA,b,c}
     ```
   - gives you this:
     ```txt
     /folder
       /sibling1
+        /commonA
+        /b
+        /c
       /sibling2
+        /commonA
+        /b
+        /c
     ```
-  - (note: multiple levels at once doesn't seem to work on my machine: `mkdir folder/{sibling1,sibling2}/{commonA,b,c}`)
 - `cd`, but back to where you last were instead of `cd ..` a bunch of times:
   - `cd ./somewhere/deeply/nested`
   - then `cd -` to get back to `./`
