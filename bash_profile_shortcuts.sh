@@ -35,6 +35,17 @@ alias stopnode='killall node'
 alias stopmongod='killall mongod'
 alias sri='sha'
 alias srv='python3 -m http.server 8000'
+alias vt='vite'
+
+function convenience() {
+  # convenience nameOfConvenienceScriptBeingCreated
+  echo
+  echo "Creating convenience script repo: $1"
+  echo
+  gh repo create --template convenience "$1" --public
+  gh repo clone "$1"
+  cd "$1"
+}
 
 function learn() {
   # learn nameOfTheThingBeingLearned
