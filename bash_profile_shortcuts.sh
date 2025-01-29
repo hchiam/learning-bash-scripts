@@ -116,3 +116,5 @@ function get_size() {
     echo "$1 has a size of $filesize"
   fi
 }
+
+PS1="\[\033[01;34m\]\w\[\033[00m\] : "
