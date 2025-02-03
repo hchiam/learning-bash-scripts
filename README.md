@@ -2,6 +2,8 @@
 
 Just one of the things I'm learning. <https://github.com/hchiam/learning>
 
+[You type commands in a terminal or console, and those commands get translated by the shell for the kernel to perform.](https://www.quora.com/What-is-the-difference-among-shell-console-terminal-and-kernel-Also-what-is-the-difference-between-shell-and-application-programs)
+
 A nice article on key things to know: https://www.joshwcomeau.com/javascript/terminal-for-js-devs (my own summary notes are below)
 
 To enable running a script upon click, you need to edit permissions. For example, for `chrome-incognito-shortcut.app`:
