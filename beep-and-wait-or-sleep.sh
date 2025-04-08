@@ -23,5 +23,5 @@ function wait {
 }
 
 function mario {
-    beep 659 100; beep 659 200; beep 659 100; wait 100; beep 523 100; beep 659 200; beep 784 600; beep 391 600;
+    beep 659 500; beep 659 1000; beep 659 1000; wait 500; beep 523 1000; beep 659 1000; beep 784 2000; beep 391 2000;
 }
