@@ -122,6 +122,20 @@ git commit
 git push <remote-name> <branch-name>
 ```
 
+## if `.gitignore` isn't properly ignoring files
+
+<https://stackoverflow.com/questions/45400361/why-is-gitignore-not-ignoring-my-files>
+
+For example, if I accidentally `git add`ed in `dist/index.html`, then changes on it will be tracked, so I'd need to run one of these:
+
+```sh
+git rm --cached dist/index.html
+git rm -r --cached dist
+# -r is for recursive
+
+# and then add and commit the new change(s) to untrack
+```
+
 ## Random Notes
 
 Get file info like edit date: `stat filename`
