@@ -4,7 +4,7 @@ Just one of the things I'm learning. <https://github.com/hchiam/learning>
 
 [You type commands in a terminal or console, and those commands get translated by the shell for the kernel to perform.](https://www.quora.com/What-is-the-difference-among-shell-console-terminal-and-kernel-Also-what-is-the-difference-between-shell-and-application-programs)
 
-A nice article on key things to know: https://www.joshwcomeau.com/javascript/terminal-for-js-devs (my own summary notes are below)
+A nice article on key things to know: <https://www.joshwcomeau.com/javascript/terminal-for-js-devs> (my own summary notes are below)
 
 To enable running a script upon click, you need to edit permissions. For example, for `chrome-incognito-shortcut.app`:
 
@@ -22,7 +22,7 @@ chmod 744 chrome-incognito-shortcut.app
 
 ## `>` and `<` and `>>` and `<<` in bash
 
-https://superuser.com/questions/480599/with-regards-to-piping-commands-what-are-the-greater-than-and-less-than
+<https://superuser.com/questions/480599/with-regards-to-piping-commands-what-are-the-greater-than-and-less-than>
 
 - `>` = redirect output = "(over)write to", e.g.: `echo 'hello' > file.txt`
 - `<` = redirect input = "read", e.g.: `cat < file.txt` (same as just `cat file.txt`)
@@ -98,7 +98,7 @@ From <https://www.youtube.com/watch?v=ecK3EnyGD8o> :
 
 - lots more git tips at a [Fireship.io YouTube video](https://www.youtube.com/watch?v=ecK3EnyGD8o)
 
-### How to revert changes of a git push:
+### How to revert changes of a git push
 
 This shows the commit hash: (looks like `l0ngStr1ng0fL3t7er5AndNum83rz`)
 
@@ -114,7 +114,7 @@ git revert l0ngStr1ng0fL3t7er5AndNum83rz
 
 ### How to create a branch with no history
 
-https://stackoverflow.com/a/34954852
+<https://stackoverflow.com/a/34954852>
 
 ```bash
 git checkout --orphan <name_you_choose_for_orphan_branch>
@@ -177,7 +177,7 @@ npm install <package-name> --save-exact
 
 so you get `1.2.3` instead of `^1.2.3` in your `package.json`
 
-https://stackoverflow.com/questions/58638817/what-is-the-purpose-of-using-save-exact#:~:text=--save-exact%20will%20generate%20the%20next%20package.json%20code
+<https://stackoverflow.com/questions/58638817/what-is-the-purpose-of-using-save-exact#:~:text=--save-exact%20will%20generate%20the%20next%20package.json%20code>
 
 ### Actually upgrade node
 
@@ -252,7 +252,7 @@ or set up shortcut `srv` in .bash_profile:
 alias srv='python3 -m http.server 8000'
 ```
 
-## https://www.joshwcomeau.com/javascript/terminal-for-js-devs
+## <https://www.joshwcomeau.com/javascript/terminal-for-js-devs>
 
 - Bash ≈ Zsh
 - the terminal is kinda like the console log in browser dev tools, but can switch between shell languages
@@ -279,32 +279,35 @@ alias srv='python3 -m http.server 8000'
   - now you can just do `hi` to get a printout of `Hello world!`
 - `command1 && command2` = do command1 and then to command2
 - stuck in Vi/Vim? `Ctrl`+`c` won't work! hit `Escape` -> `:` -> `q!` -> `Enter`
-- common web dev tasks: https://www.joshwcomeau.com/javascript/terminal-for-js-devs/#common-development-tasks
+- common web dev tasks: <https://www.joshwcomeau.com/javascript/terminal-for-js-devs/#common-development-tasks>
   - reinstall dependencies: `rm -rf node_modules; npm install;`
 
-## more to learn for unix:
+## more to learn for unix
 
-- https://www.tutorialspoint.com/unix/unix-special-variables.htm
-- https://www.tutorialspoint.com/unix/unix-using-arrays.htm
-- https://www.tutorialspoint.com/unix/unix-basic-operators.htm
-- https://www.tutorialspoint.com/unix/unix-decision-making.htm
-- https://www.tutorialspoint.com/unix/unix-shell-loops.htm
-- https://www.tutorialspoint.com/unix/unix-quoting-mechanisms.htm for getting variables and special characters parsed or not parsed in strings
-- https://www.tutorialspoint.com/unix/unix-io-redirections.htm - there's more to it than just > file
-- https://www.tutorialspoint.com/unix/unix-shell-functions.htm
-- https://www.tutorialspoint.com/unix/unix-manpage-help.htm
-- https://www.tutorialspoint.com/unix/unix-useful-commands.htm
+- <https://www.tutorialspoint.com/unix/unix-special-variables.htm>
+- <https://www.tutorialspoint.com/unix/unix-using-arrays.htm>
+- <https://www.tutorialspoint.com/unix/unix-basic-operators.htm>
+- <https://www.tutorialspoint.com/unix/unix-decision-making.htm>
+- <https://www.tutorialspoint.com/unix/unix-shell-loops.htm>
+- <https://www.tutorialspoint.com/unix/unix-quoting-mechanisms.htm> for getting variables and special characters parsed or not parsed in strings
+- <https://www.tutorialspoint.com/unix/unix-io-redirections.htm> - there's more to it than just > file
+- <https://www.tutorialspoint.com/unix/unix-shell-functions.htm>
+- <https://www.tutorialspoint.com/unix/unix-manpage-help.htm>
+- <https://www.tutorialspoint.com/unix/unix-useful-commands.htm>
 
 ## 5 linux command tricks from fireship.io
 
-https://www.youtube.com/shorts/fwBIZRq-vzY
+<https://www.youtube.com/shorts/fwBIZRq-vzY>
 
 - `mkdir`, but with multiple sibling folders at the same time:
   - `mkdir folder` then:
+
     ```sh
     mkdir -p folder/{sibling1,sibling2}/{commonA,b,c}
     ```
+
   - gives you this:
+
     ```txt
     /folder
       /sibling1
@@ -316,16 +319,22 @@ https://www.youtube.com/shorts/fwBIZRq-vzY
         /b
         /c
     ```
+
 - `cd`, but back to where you last were instead of `cd ..` a bunch of times:
   - `cd ./somewhere/deeply/nested` then to get back to `./`:
+
     ```sh
     cd -
     ```
+
 - `touch`, but create a bunch of files with names with a pattern:
+
   - ```sh
     touch file{1..10}.txt
     ```
+
     =
+
     ```txt
     file1.txt
     file2.txt
@@ -338,18 +347,24 @@ https://www.youtube.com/shorts/fwBIZRq-vzY
     file9.txt
     file10.txt
     ```
+
   - (note: the one-liner command doesn't pad with 0s on my machine despite `{01..10}`)
   - two 0-padding alternatives that worked for me: (`%02g` = zero-padding of width 2 of general number format)
+
     - ```sh
       touch $(seq -f "file%02g.txt" 1 10)
       ```
-    - or this: (the space after `txt ` matters for this one!)
+
+    - or this: (the space after `txt` matters for this one!)
+
       ```sh
       touch $(printf "file%02g.txt " {1..10})`
       ```
+
 - `tail err.log` to read a file, but `tail -f err.log` to "follow" changes
   - (note: doesn't seem to print out the right contents if i edit in another tab with `nano`)
 - `history`, but to get the last 5 commands:
+
   - ```sh
     history 5
     ```
