@@ -36,6 +36,11 @@ alias stopmongod='killall mongod'
 alias sri='sha'
 alias srv='python3 -m http.server 8000'
 alias vt='vite'
+alias aug='auggie'
+alias augp='auggie --print '
+alias augpq='auggie --print --quiet '
+alias augq='auggie --quiet '
+alias san="perl -i -C -pe 's/[\x{200B}-\x{200D}\x{FEFF}\x{00A0}\x{2028}\x{2029}\x{E0020}-\x{E007E}\x{FFFD}]//g'"
 
 function convenience() {
   # convenience nameOfConvenienceScriptBeingCreated
