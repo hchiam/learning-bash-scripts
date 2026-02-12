@@ -212,6 +212,13 @@ nvm install node --lts
 node -v
 ```
 
+If you want to permanently set the default node version so new terminals use it:
+
+```bash
+# for example if using --lts installed 24.13.1:
+nvm alias default 24.13.1
+```
+
 If you accidentally installed the latest but want to downgrade to the last stable instead:
 
 ```bash
