@@ -389,3 +389,7 @@ alias srv='python3 -m http.server 8000'
   - ```sh
     history 5
     ```
+
+## adb to let Windows Chrome inspect Android Chrome with port forwarding
+
+[port-forwarding.ps1](https://github.com/hchiam/learning-powershell/blob/main/port-forwarding.ps1)
