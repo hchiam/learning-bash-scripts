@@ -394,11 +394,22 @@ alias srv='python3 -m http.server 8000'
 
 [port-forwarding.ps1](https://github.com/hchiam/learning-powershell/blob/main/port-forwarding.ps1)
 
-## passing args as given to powershell alias function
+## passing args as given to a function/alias
+
+powershell:
 
 ```ps1
 # this will work with or without any arguments passed in:
 function cla {
     claude @args
+}
+```
+
+bash:
+
+```sh
+# this will work with or without any arguments passed in:
+function cla {
+    claude "$@"
 }
 ```
